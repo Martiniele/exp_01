@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="login" class="com.jdbcconn.UserAction" method="loginAlivator">
+			<result name="success">/show_all.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="edit" class="com.jdbcconn.UserAction" method="editUser">
+			<result name="success">/welcome.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="del" class="com.jdbcconn.UserAction" method="deleteUser">
+			<result name="success">/welcome.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="adduser" class="com.jdbcconn.UserAction" method="addUser">
+			<result name="success">/welcome.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+</struts>    
